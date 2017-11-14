@@ -1,0 +1,2 @@
+--Need to add certificate to jre cert list use command below
+keytool -import -alias example -keystore  /Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/jre/lib/security/cacerts -file /Users/selman.sezgin/Desktop/accountsgooglecom.crt
