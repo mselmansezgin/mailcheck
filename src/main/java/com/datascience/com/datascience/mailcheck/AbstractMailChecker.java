@@ -1,6 +1,5 @@
 package com.datascience.com.datascience.mailcheck;
 
-import com.datascience.com.datascience.schedule.ScheduledTasks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -34,7 +34,7 @@ public class OracleDbUserOperation implements DbOperation {
         String str = cstmt.getString(3);
 
         cstmt.close();
-        System.out.println("Retorno: " + str);
+        System.out.println("Procedure's response: " + str);
 
     }
 

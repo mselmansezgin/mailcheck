@@ -21,9 +21,6 @@ public class OracleDbConnection {
 
     }
 
-    public OracleDbConnection(AppProperties props) throws ClassNotFoundException, SQLException {
-        this.props = props;
-    }
 
     public static Connection getConnection(AppProperties props) throws SQLException, ClassNotFoundException {
         if (CON_INSTANCE == null) {
@@ -32,6 +29,7 @@ public class OracleDbConnection {
             CON_INSTANCE = DriverManager.getConnection(props.getDbUrl(), props.getDbUsername(), props.getDbPassword());
             log.info("Connected to database");
         }
+        log.info("Existing Connection");
         return CON_INSTANCE;
     }
 
