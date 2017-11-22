@@ -5,5 +5,5 @@ import java.io.IOException;
 
 public interface MailChecker {
 
-    public boolean checkMail() throws MessagingException, IOException;
+    public void checkMail() throws MessagingException, IOException;
 }

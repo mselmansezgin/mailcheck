@@ -8,7 +8,7 @@ import javax.mail.*;
 import java.io.IOException;
 
 public abstract class AbstractMailChecker implements MailChecker {
-    public static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
+    public final Logger log = LoggerFactory.getLogger(AbstractMailChecker.class);
 
     public String handleMultipart(Message msg) {
 
